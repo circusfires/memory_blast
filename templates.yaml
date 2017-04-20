@@ -1,5 +1,5 @@
 welcome: Welcome to memory blast. I'm going to say numbers for you to repeat. What level would you like to start at?
-welcome_repromt: Please say a level between one and ten to begin.
+welcome_reprompt: Please say a level between one and ten to begin.
 
 round: Level {{ lvl }} . Can you repeat the numbers {{ numbers|join(", ") }} ?
 

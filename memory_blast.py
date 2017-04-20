@@ -18,7 +18,7 @@ logging.getLogger("flask_ask").setLevel(logging.DEBUG)
 def new_game():
 
     welcome_msg = render_template('welcome')
-    welcome_rempromt_msg = render_template('welcome_repromt')
+    welcome_rempromt_msg = render_template('welcome_reprompt')
 
     return question(welcome_msg)
 
