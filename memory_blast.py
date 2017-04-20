@@ -17,6 +17,8 @@ logging.getLogger("flask_ask").setLevel(logging.DEBUG)
 @ask.launch
 def new_game():
 
+    session.attributes['high_score'] = 0
+    
     welcome_msg = render_template('welcome')
     welcome_rempromt_msg = render_template('welcome_reprompt')
 
@@ -27,7 +29,7 @@ def new_game():
 def first_round(lvl):
     if (lvl > 10) or (lvl < 1):
         
-        sel_lvl_msg = render_template('welcome_repromt')
+        sel_lvl_msg = render_template('welcome_reprompt')
         return question(sel_lvl_msg)
     
     else:
@@ -50,11 +52,15 @@ def answer(first, second, third, fourth, fifth, sixth, seventh, eighth, ninth, t
     
     usr_ans = [first, second, third, fourth, fifth, sixth, seventh, eighth, ninth, tenth, eleventh]
     usr_ans = usr_ans[0:(session.attributes['level']+1)]
+    usr_ans = translate_nums(usr_ans)
     session.attributes['usr_ans'] = usr_ans
+    
     
 
     if usr_ans == winning_numbers:
 
+        #save high score for this session
+        session.attributes['high_score'] = session.attributes['level']
         msg = render_template('win')
         lvl_up(session.attributes['level'])
 
@@ -74,13 +80,13 @@ def help():
 
 @ask.intent('AMAZON.StopIntent')
 def stop():
-    bye_text = render_template('goodbye')
+    bye_text = high_score()
     return statement(bye_text)
 
 
 @ask.intent('AMAZON.CancelIntent')
 def cancel():
-    bye_text = render_template('goodbye')
+    bye_text = high_score()
     return statement(bye_text)
 
 
@@ -117,6 +123,22 @@ def lvl_down(lvl):
         session.attributes['level'] = 1
         
     return
+
+def translate_nums(numbers):
+    for i in xrange(len(numbers)):
+        if numbers[i] == "oh":
+            numbers[i] = 0
+            
+    return numbers
+            
+def high_score():
+    if session.attributes['high_score'] > 0:
+        msg = render_template('goodbye_high', score = (session.attributes['high_score'] + 1))
+    
+    else:
+        msg = render_template('goodbye')
+        
+    return msg
 
         
 if __name__ == '__main__':
