@@ -1,0 +1,64 @@
+{
+  "intents": [
+    {
+      "intent": "YesIntent"
+    },
+    {
+      "intent": "NoIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "lvl",
+          "type": "AMAZON.NUMBER"
+        }
+      ],
+      "intent": "LevelIntent"  
+    },
+    {
+      "slots": [
+        {
+          "name": "first",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "second",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "third",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "fourth",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "fifth",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "sixth",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "seventh",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "eighth",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "ninth",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "tenth",
+          "type": "AMAZON.NUMBER"
+        }
+      ],
+      "intent": "AnswerIntent"
+    }
+  ]
+}

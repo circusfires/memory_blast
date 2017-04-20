@@ -1,0 +1,18 @@
+welcome: Welcome to memory game. I'm going to say numbers for you to repeat. Ready?
+welcome_repromt: Please say a level between one and ten to start at.
+
+
+sel_level: What level would you like to start at?
+
+sel_level_repromt_h: The maximum level is ten! What level would you like to start at?
+sel_level_repromt_l: The minimum level is two! What level would you like to start at?
+
+lvl_ind: Level {{ lvl }} .
+
+round: Can you repeat the numbers {{ numbers|join(", ") }} ?
+
+win: Good job.
+
+lose: Sorry, that's the wrong answer.
+
+goodbye: Thanks for playing the Peak memory game. Goodbye!

@@ -1,0 +1,49 @@
+YesIntent yes
+
+YesIntent sure
+
+NoIntent no
+
+NoIntent nope
+
+
+LevelIntent {lvl}                  
+
+LevelIntent level {lvl}
+
+
+AnswerIntent {first} {second} 
+
+AnswerIntent {first} and {second}
+
+AnswerIntent {first} {second} {third}
+
+AnswerIntent {first} {second} and {third}
+
+AnswerIntent {first} {second} {third} {fourth}
+
+AnswerIntent {first} {second} {third} and {fourth}
+
+AnswerIntent {first} {second} {third} {fourth} {fifth}
+
+AnswerIntent {first} {second} {third} {fourth} and {fifth}
+
+AnswerIntent {first} {second} {third} {fourth} {fifth} {sixth}
+
+AnswerIntent {first} {second} {third} {fourth} {fifth} and {sixth}
+
+AnswerIntent {first} {second} {third} {fourth} {fifth} {sixth} {seventh}
+
+AnswerIntent {first} {second} {third} {fourth} {fifth} {sixth} and {seventh}
+
+AnswerIntent {first} {second} {third} {fourth} {fifth} {sixth} {seventh} {eighth}
+
+AnswerIntent {first} {second} {third} {fourth} {fifth} {sixth} {seventh} and {eighth}
+
+AnswerIntent {first} {second} {third} {fourth} {fifth} {sixth} {seventh} {eighth} {ninth}
+
+AnswerIntent {first} {second} {third} {fourth} {fifth} {sixth} {seventh} {eighth} and {ninth}
+
+AnswerIntent {first} {second} {third} {fourth} {fifth} {sixth} {seventh} {eighth} {ninth} {tenth}
+
+AnswerIntent {first} {second} {third} {fourth} {fifth} {sixth} {seventh} {eighth} {ninth} and {tenth}
