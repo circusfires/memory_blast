@@ -1,18 +1,12 @@
-welcome: Welcome to memory game. I'm going to say numbers for you to repeat. Ready?
-welcome_repromt: Please say a level between one and ten to start at.
+welcome: Welcome to memory blast. I'm going to say numbers for you to repeat. What level would you like to start at?
+welcome_repromt: Please say a level between one and ten to begin.
 
+round: Level {{ lvl }} . Can you repeat the numbers {{ numbers|join(", ") }} ?
 
-sel_level: What level would you like to start at?
+win: Good job!
 
-sel_level_repromt_h: The maximum level is ten! What level would you like to start at?
-sel_level_repromt_l: The minimum level is two! What level would you like to start at?
+lose: Sorry, that's the wrong answer!
 
-lvl_ind: Level {{ lvl }} .
+goodbye: Thanks for playing memory blast. Goodbye!
 
-round: Can you repeat the numbers {{ numbers|join(", ") }} ?
-
-win: Good job.
-
-lose: Sorry, that's the wrong answer.
-
-goodbye: Thanks for playing the Peak memory game. Goodbye!
+help: To play, repeat the numbers I read out to you. When you correctly repeat the numbers, the difficulty increases. When you are incorrect, the difficulty decreases. You may stop at anytime by saying stop. What level would you like to start at?

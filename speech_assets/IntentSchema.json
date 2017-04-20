@@ -1,10 +1,13 @@
 {
   "intents": [
     {
-      "intent": "YesIntent"
+      "intent": "AMAZON.HelpIntent"
     },
     {
-      "intent": "NoIntent"
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
     },
     {
       "slots": [
@@ -19,43 +22,47 @@
       "slots": [
         {
           "name": "first",
-          "type": "AMAZON.NUMBER"
+          "type": "SINGLE_DIGIT_NUMBER"
         },
         {
           "name": "second",
-          "type": "AMAZON.NUMBER"
+          "type": "SINGLE_DIGIT_NUMBER"
         },
         {
           "name": "third",
-          "type": "AMAZON.NUMBER"
+          "type": "SINGLE_DIGIT_NUMBER"
         },
         {
           "name": "fourth",
-          "type": "AMAZON.NUMBER"
+          "type": "SINGLE_DIGIT_NUMBER"
         },
         {
           "name": "fifth",
-          "type": "AMAZON.NUMBER"
+          "type": "SINGLE_DIGIT_NUMBER"
         },
         {
           "name": "sixth",
-          "type": "AMAZON.NUMBER"
+          "type": "SINGLE_DIGIT_NUMBER"
         },
         {
           "name": "seventh",
-          "type": "AMAZON.NUMBER"
+          "type": "SINGLE_DIGIT_NUMBER"
         },
         {
           "name": "eighth",
-          "type": "AMAZON.NUMBER"
+          "type": "SINGLE_DIGIT_NUMBER"
         },
         {
           "name": "ninth",
-          "type": "AMAZON.NUMBER"
+          "type": "SINGLE_DIGIT_NUMBER"
         },
         {
           "name": "tenth",
-          "type": "AMAZON.NUMBER"
+          "type": "SINGLE_DIGIT_NUMBER"
+        },
+        {
+          "name": "eleventh",
+          "type": "SINGLE_DIGIT_NUMBER"
         }
       ],
       "intent": "AnswerIntent"
