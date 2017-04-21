@@ -63,6 +63,42 @@
         {
           "name": "eleventh",
           "type": "SINGLE_DIGIT_NUMBER"
+        },
+                {
+          "name": "twelfth",
+          "type": "SINGLE_DIGIT_NUMBER"
+        },
+        {
+          "name": "thirteenth",
+          "type": "SINGLE_DIGIT_NUMBER"
+        },
+        {
+          "name": "fourteenth",
+          "type": "SINGLE_DIGIT_NUMBER"
+        },
+        {
+          "name": "fifteenth",
+          "type": "SINGLE_DIGIT_NUMBER"
+        },
+        {
+          "name": "sixteenth",
+          "type": "SINGLE_DIGIT_NUMBER"
+        },
+        {
+          "name": "seventeenth",
+          "type": "SINGLE_DIGIT_NUMBER"
+        },
+        {
+          "name": "eighteenth",
+          "type": "SINGLE_DIGIT_NUMBER"
+        },
+        {
+          "name": "nineteenth",
+          "type": "SINGLE_DIGIT_NUMBER"
+        },
+        {
+          "name": "twentieth",
+          "type": "SINGLE_DIGIT_NUMBER"
         }
       ],
       "intent": "AnswerIntent"

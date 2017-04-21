@@ -42,3 +42,40 @@ AnswerIntent {first} {second} {third} {fourth} {fifth} {sixth} {seventh} {eighth
 AnswerIntent {first} {second} {third} {fourth} {fifth} {sixth} {seventh} {eighth} {ninth} {tenth} {eleventh}
 
 AnswerIntent {first} {second} {third} {fourth} {fifth} {sixth} {seventh} {eighth} {ninth} {tenth} and {eleventh}
+
+AnswerIntent {first} {second} {third} {fourth} {fifth} {sixth} {seventh} {eighth} {ninth} {tenth} {eleventh} {twelfth}
+
+AnswerIntent {first} {second} {third} {fourth} {fifth} {sixth} {seventh} {eighth} {ninth} {tenth} {eleventh} and {twelfth}
+
+AnswerIntent {first} {second} {third} {fourth} {fifth} {sixth} {seventh} {eighth} {ninth} {tenth} {eleventh} {twelfth} {thirteenth}
+
+AnswerIntent {first} {second} {third} {fourth} {fifth} {sixth} {seventh} {eighth} {ninth} {tenth} {eleventh} {twelfth} and {thirteenth}
+
+AnswerIntent {first} {second} {third} {fourth} {fifth} {sixth} {seventh} {eighth} {ninth} {tenth} {eleventh} {twelfth} {thirteenth} {fourteenth}
+
+AnswerIntent {first} {second} {third} {fourth} {fifth} {sixth} {seventh} {eighth} {ninth} {tenth} {eleventh} {twelfth} {thirteenth} and {fourteenth}
+
+AnswerIntent {first} {second} {third} {fourth} {fifth} {sixth} {seventh} {eighth} {ninth} {tenth} {eleventh} {twelfth} {thirteenth} {fourteenth} {fifteenth}
+
+AnswerIntent {first} {second} {third} {fourth} {fifth} {sixth} {seventh} {eighth} {ninth} {tenth} {eleventh} {twelfth} {thirteenth} {fourteenth} and {fifteenth}
+
+AnswerIntent {first} {second} {third} {fourth} {fifth} {sixth} {seventh} {eighth} {ninth} {tenth} {eleventh} {twelfth} {thirteenth} {fourteenth} {fifteenth} {sixteenth}
+
+AnswerIntent {first} {second} {third} {fourth} {fifth} {sixth} {seventh} {eighth} {ninth} {tenth} {eleventh} {twelfth} {thirteenth} {fourteenth} {fifteenth} and {sixteenth}
+
+AnswerIntent {first} {second} {third} {fourth} {fifth} {sixth} {seventh} {eighth} {ninth} {tenth} {eleventh} {twelfth} {thirteenth} {fourteenth} {fifteenth} {sixteenth} {seventeenth}
+
+AnswerIntent {first} {second} {third} {fourth} {fifth} {sixth} {seventh} {eighth} {ninth} {tenth} {eleventh} {twelfth} {thirteenth} {fourteenth} {fifteenth} {sixteenth} and {seventeenth}
+
+AnswerIntent {first} {second} {third} {fourth} {fifth} {sixth} {seventh} {eighth} {ninth} {tenth} {eleventh} {twelfth} {thirteenth} {fourteenth} {fifteenth} {sixteenth} {seventeenth} {eighteenth}
+
+AnswerIntent {first} {second} {third} {fourth} {fifth} {sixth} {seventh} {eighth} {ninth} {tenth} {eleventh} {twelfth} {thirteenth} {fourteenth} {fifteenth} {sixteenth} {seventeenth} and {eighteenth}
+
+AnswerIntent {first} {second} {third} {fourth} {fifth} {sixth} {seventh} {eighth} {ninth} {tenth} {eleventh} {twelfth} {thirteenth} {fourteenth} {fifteenth} {sixteenth} {seventeenth} {eighteenth} {nineteenth}
+
+AnswerIntent {first} {second} {third} {fourth} {fifth} {sixth} {seventh} {eighth} {ninth} {tenth} {eleventh} {twelfth} {thirteenth} {fourteenth} {fifteenth} {sixteenth} {seventeenth} {eighteenth} and {nineteenth}
+
+AnswerIntent {first} {second} {third} {fourth} {fifth} {sixth} {seventh} {eighth} {ninth} {tenth} {eleventh} {twelfth} {thirteenth} {fourteenth} {fifteenth} {sixteenth} {seventeenth} {eighteenth} {nineteenth} {twentieth}
+
+AnswerIntent {first} {second} {third} {fourth} {fifth} {sixth} {seventh} {eighth} {ninth} {tenth} {eleventh} {twelfth} {thirteenth} {fourteenth} {fifteenth} {sixteenth} {seventeenth} {eighteenth} {nineteenth} and {twentieth}
+

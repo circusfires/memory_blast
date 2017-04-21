@@ -16,21 +16,21 @@ logging.getLogger("flask_ask").setLevel(logging.DEBUG)
 
 @ask.launch
 def new_game():
-
+    
     session.attributes['high_score'] = 0
     
     welcome_msg = render_template('welcome')
     welcome_rempromt_msg = render_template('welcome_reprompt')
 
-    return question(welcome_msg)
+    return question(welcome_msg).reprompt(welcome_rempromt_msg)
 
 
 @ask.intent("LevelIntent", convert={'lvl': int})
 def first_round(lvl):
-    if (lvl > 10) or (lvl < 1):
+    if (lvl > 19) or (lvl < 1):
         
         sel_lvl_msg = render_template('welcome_reprompt')
-        return question(sel_lvl_msg)
+        return question(sel_lvl_msg).reprompt(sel_lvl_msg)
     
     else:
         
@@ -42,15 +42,15 @@ def first_round(lvl):
 
         round_msg = render_template('round', lvl=lvl, numbers=numbers)
 
-        return question(round_msg)
+        return question(round_msg).reprompt(round_msg)
 
 
-@ask.intent("AnswerIntent", convert={'first': int, 'second': int, 'third': int, 'fourth': int, 'fifth': int, 'sixth': int, 'seventh': int, 'eighth': int, 'ninth': int, 'tenth': int, 'eleventh': int})
-def answer(first, second, third, fourth, fifth, sixth, seventh, eighth, ninth, tenth, eleventh):
+@ask.intent("AnswerIntent", convert={'first': int, 'second': int, 'third': int, 'fourth': int, 'fifth': int, 'sixth': int, 'seventh': int, 'eighth': int, 'ninth': int, 'tenth': int, 'eleventh': int, 'twelfth': int, 'thirteenth': int, 'fourteenth': int, 'fifteenth': int, 'sixteenth': int, 'seventeenth': int, 'eighteenth': int, 'nineteenth': int, 'twentieth': int})
+def answer(first, second, third, fourth, fifth, sixth, seventh, eighth, ninth, tenth, eleventh, twelfth, thirteenth, fourteenth, fifteenth, sixteenth, seventeenth, eighteenth, nineteenth, twentieth):
 
     winning_numbers = session.attributes['numbers']
     
-    usr_ans = [first, second, third, fourth, fifth, sixth, seventh, eighth, ninth, tenth, eleventh]
+    usr_ans = [first, second, third, fourth, fifth, sixth, seventh, eighth, ninth, tenth, eleventh, twelfth, thirteenth, fourteenth, fifteenth, sixteenth, seventeenth, eighteenth, nineteenth, twentieth]
     usr_ans = usr_ans[0:(session.attributes['level']+1)]
     usr_ans = translate_nums(usr_ans)
     session.attributes['usr_ans'] = usr_ans
@@ -109,10 +109,10 @@ def next_round(msg, lvl):
 
 #helper functions
 def lvl_up(lvl):
-    if lvl < 10:
+    if lvl < 19:
         session.attributes['level'] += 1
     else:
-        session.attributes['level'] = 10
+        session.attributes['level'] = 19
         
     return
 

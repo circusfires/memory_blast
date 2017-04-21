@@ -1,5 +1,5 @@
 welcome: Welcome to memory blast. I'm going to say numbers for you to repeat. What level would you like to start at?
-welcome_reprompt: Please say a level between one and ten to begin.
+welcome_reprompt: Please say a level between one and nineteen to begin.
 
 round: Level {{ lvl }} . Can you repeat the numbers {{ numbers|join(", ") }} ?
 
@@ -10,4 +10,4 @@ lose: Sorry, that's the wrong answer!
 goodbye: Thanks for playing memory blast. Goodbye!
 goodbye_high: Thanks for playing memory blast. Today, the maximum amount of numbers you memorized was {{ score }} . Goodbye!
 
-help: To play, repeat the numbers I read out to you. When you correctly repeat the numbers, the difficulty increases. When you are incorrect, the difficulty decreases. You may stop at anytime by saying stop. What level would you like to start at?
+help: To play, repeat the numbers I read out to you. When you correctly repeat the numbers, the difficulty increases. When you are incorrect, the difficulty decreases. You can also say stop if you are done. What level would you like to start at?
